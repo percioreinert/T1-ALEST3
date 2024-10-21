@@ -34,6 +34,8 @@ public class Main {
 
         // TODO: O rally termina quando alcançar a distância total.
 
+        // TODO: Retornar os pontos selecionados.
+
         return List.of(0);
     }
 
