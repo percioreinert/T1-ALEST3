@@ -25,7 +25,17 @@ public class Main {
     // Distância d = o máximo de km por dia. 10km por exemplo.
     // Validar conjunto de entrada
 
+    private static List<Integer> greedy(List<Integer> stops, Integer totalDistance, Integer dailyDistance) {
+        // TODO: Comparar sempre dois pontos, vendo a distância entre eles, para determinar se é possível ir ao próximo ponto naquele dia.
 
+        // TODO: Se for possível ir ao próximo ponto, diminuir a distância total do rally da distância percorrida, e diminuir a distância diária da distância percorrida.
+
+        // TODO: Salvar os pontos de parada por dia.
+
+        // TODO: O rally termina quando alcançar a distância total.
+
+        return List.of(0);
+    }
 
 
 }
