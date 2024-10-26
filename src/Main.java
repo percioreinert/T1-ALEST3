@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -27,7 +28,27 @@ public class Main {
 
     private static List<Integer> greedy(List<Integer> stops, Integer totalDistance, Integer dailyDistance) {
         // TODO: Comparar sempre dois pontos, vendo a distância entre eles, para determinar se é possível ir ao próximo ponto naquele dia.
+        var stopList = new ArrayList<Integer>();
+        var reachedEnd = false;
+        var daily = dailyDistance;
+        var nextStop = 0;
 
+        while (!reachedEnd) {
+            var stop = stops.get(nextStop);
+            if (stop <= daily) {
+                stopList.add(stop);
+                daily -= stop;
+                totalDistance -= stop;
+            } else {
+                daily = dailyDistance;
+                continue;
+            }
+            if (totalDistance <= 0) {
+                reachedEnd = true;
+            }
+        }
+
+        return stopList;
         // TODO: Se for possível ir ao próximo ponto, diminuir a distância total do rally da distância percorrida, e diminuir a distância diária da distância percorrida.
 
         // TODO: Salvar os pontos de parada por dia.
