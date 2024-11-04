@@ -1,0 +1,5 @@
+totalDistance=40; dailyDistance=10; stops=5, 10, 20, 30, 39
+totalDistance=20; dailyDistance=8; stops=5, 11, 12, 13, 18
+totalDistance=100; dailyDistance=25; stops=15, 30, 45, 60, 85
+totalDistance=50; dailyDistance=15; stops=5, 10, 20, 35, 45
+totalDistance=56; dailyDistance=12; stops=10,11,21,23,35,39,47,55
